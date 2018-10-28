@@ -20,6 +20,8 @@
   <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
   <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 </head>
 
 <body>
@@ -27,15 +29,17 @@
     <img id="header-img" src="https://lh3.googleusercontent.com/CWFHSuXGJs1_j-44yI68YDKEE2HL1KkjilYUOf8nLY_3dBJHwnlwMyq7kVu4XPCW2021NwgqxfsvU6pc953leMMu9cvZ-OMssvhYp3mjXb-VmsLVXVHLNoPGze42Ge8kznEz8dB3nw=w2400"
       alt="logo for Terry's Guitars">
     <nav id="nav-bar">
-      <a href="#contact" class="nav-link">What We Do</a>
-      <a href="#news" class="nav-link">Pricing</a>
-      <a href="#home" class="nav-link">Contact</a>
+      <a href="#contact" class="nav-link" id="contact">Contact</a>
+      <a href="#whatWeDo" class="nav-link" id="whatWeDo">What We Do</a>
+      <a href="#videoYouTube" class="nav-link" id="videoYouTube">Video</a>
+      <a href="#pricing" class="nav-link" id="pricing">Pricing</a>
+
     </nav>
 
   </header>
   <form id="form" action="https://www.freecodecamp.com/email-submit">
-    <h1>Amazing Guitar Resources</h1>
-    <input type="email" id="email" placeholder="enter email">
+    <h1 id="title">Amazing Guitar Resources</h1>
+    <input name="email" type="email" id="email" placeholder="Enter email">
     <input type="submit" id="submit" value="Get Started">
   </form>
 
@@ -62,29 +66,33 @@
     </ul>
 
   </div>
-  <div id="vid-wrap">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/OeB4MP7utYY" frameborder="0" allow="autoplay; encrypted-media"
+  <div id="video1">
+    <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/OeB4MP7utYY" frameborder="0" allow="autoplay; encrypted-media"
       allowfullscreen></iframe>
   </div>
 
 
   <div id="shop">
     <div class="window">
-      <h3>Air Guitar $200</h3>
+      <h4>Air Guitar $200</h4>
       <p>Hey, Man! Buy and play an air guitar like a pro!</p>
-      <input class="windowbtn" type="submit" value="Select">
+      <input class="btn" type="submit" value="Select">
     </div>
     <div class="window">
-      <h3>One-String Guitar $20</h3>
+      <h4>One-String Guitar $20</h4>
       <p>Impress your friends with a one-string guitar!</p>
-      <input class="windowbtn" type="submit" value="Select">
+      <input class="btn" type="submit" value="Select">
     </div>
     <div class="window">
-      <h3>Ukulele $1.00</h3>
+      <h4>Ukulele $1.00</h4>
       <p>Go ahead, I dare you to bring this to practice!</p>
-      <input class="windowbtn" type="submit" value="Select">
+      <input class="btn" type="submit" value="Select">
     </div>
   </div>
+  <div id="scrollButton"><button type="button" id="scrollToTop">Scroll to Top</button></div>
+
+
+  <script type="text/javascript" src="script.js"></script>
 
 </body>
 <footer>

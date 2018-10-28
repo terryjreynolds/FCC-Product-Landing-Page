@@ -3,15 +3,25 @@ body {
   overflow: scroll;
   font-family: "Roboto", sans-serif;
 }
+h1 {
+  font-size: 4vw;
+}
 h2 {
   display: inline;
   margin-left: 1vw;
+  font-size: 3vw;
 }
 h3 {
   background: rgb(80, 98, 144);
   font-size: 3vh;
   color: whitesmoke;
 }
+h4 {
+  background: rgb(80, 98, 144);
+  font-size: 2vw;
+  color: whitesmoke;
+}
+
 p {
   font-size: 1.5vw;
 }
@@ -39,9 +49,9 @@ p {
   justify-content: flex-end;
 }
 .nav-link {
-  margin-left: 5vw;
+  margin-left: 3vw;
   text-emphasis: bold;
-  font-size: 3vh;
+  font-size: 1.6vw;
   color: whitesmoke;
   text-decoration: none;
 }
@@ -63,10 +73,10 @@ form {
 }
 #email {
   margin-bottom: 0.5vw;
-  width: 18vw;
-  height: auto;
+  font-size: 2vw;
 }
 #submit {
+  font-size: 1.5vw;
   margin-bottom: 3vw;
 }
 ul {
@@ -87,12 +97,12 @@ li {
   margin-bottom: 2vw;
   list-style: none;
 }
-#vid-wrap {
+#video1 {
   display: flex;
   justify-content: center;
   background: rgb(221, 221, 221);
 }
-iframe {
+#video {
   border: solid 2px rgb(80, 98, 144);
 }
 #shop {
@@ -109,8 +119,28 @@ iframe {
   width: 15vw;
   height: auto;
 }
+.btn {
+  font-size: 1vw;
+}
 footer {
   display: flex;
   justify-content: center;
   background: rgb(80, 98, 144);
+}
+#scrollButton {
+  display: flex;
+  justify-content: center;
+  background: rgb(221, 221, 221);
+  font-size: 1.2vw;
+}
+@media (max-width: 415px) {
+  #shop {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .window {
+    width: 50vw;
+  }
 }

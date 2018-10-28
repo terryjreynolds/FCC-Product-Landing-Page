@@ -23,6 +23,7 @@ h4 {
 }
 
 p {
+  color: rgb(80, 98, 144);
   font-size: 1.5vw;
 }
 
@@ -59,8 +60,21 @@ a:hover {
   color: rgb(221, 221, 221);
 }
 input:hover {
+  background-color: rgb(80, 98, 144);
+  color: whitesmoke;
+  cursor: pointer;
+}
+input {
   color: rgb(80, 98, 144);
   cursor: pointer;
+}
+#terry:hover {
+  color: rgb(221, 221, 221);
+  cursor: pointer;
+}
+#scrollToTop:hover {
+  background-color: whitesmoke;
+  color: rgb(80, 98, 144);
 }
 form {
   color: rgb(80, 98, 144);
@@ -125,12 +139,24 @@ li {
 footer {
   display: flex;
   justify-content: center;
-  background: rgb(80, 98, 144);
+  background-color: rgb(80, 98, 144);
+}
+#footerText {
+  font-size: 1.2vw;
+  color: whitesmoke;
 }
 #scrollButton {
   display: flex;
   justify-content: center;
   background: rgb(221, 221, 221);
+}
+#scrollToTop {
+  font-size: 1.2vw;
+  background-color: rgb(80, 98, 144);
+  color: whitesmoke;
+}
+#terry {
+  color: white;
   font-size: 1.2vw;
 }
 @media (max-width: 415px) {
